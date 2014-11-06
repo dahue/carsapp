@@ -37,7 +37,7 @@ public class UsersController{
     public ModelAndView getNewUser(Request request, Response response){
             Session session = LibraryController.existsSession(request);
             if (null == session) {
-                response.redirect("/");
+                response.redirect("/restrictedArea");
             }
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "newUser.mustache");
