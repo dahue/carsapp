@@ -4,7 +4,6 @@ import org.javalite.activejdbc.Base;
 import com.unrc.app.models.*;
 import java.util.*;
 import com.unrc.app.MustacheTemplateEngine;
-import com.unrc.app.controllers.*;
 
 import com.github.mustachejava.DefaultMustacheFactory;
 import com.github.mustachejava.Mustache;
@@ -80,7 +79,7 @@ public class VehicleController{
     public String GetNewVehicle(Request req, Response resp){
         Session session = LibraryController.existsSession(req);
         if (null == session) {
-            resp.redirect("/");
+            resp.redirect("/restrictedArea");
         }
         String form = "<form action= \"/vehicles \" method= \"post\">";
         form+="<center><h1>Crear Vehículo</h1></center>";

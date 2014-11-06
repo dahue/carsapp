@@ -42,6 +42,13 @@ public class App{
             new MustacheTemplateEngine()
         );
 
+        get("/restrictedArea",(request, response) -> {
+            RestrictedAreaController controller = new RestrictedAreaController();
+            return controller.restrictedArea();
+        },
+            new MustacheTemplateEngine()
+        );
+
         get("/users",(request, response) -> {
             UsersController controller = new UsersController();
             return controller.getUsers(request);

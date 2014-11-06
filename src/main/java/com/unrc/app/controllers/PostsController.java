@@ -13,7 +13,6 @@ import spark.TemplateEngine;
 import static spark.Spark.*;
 import org.elasticsearch.node.*;
 import org.elasticsearch.client.*;
-import com.unrc.app.controllers.*;
 import spark.Request;
 import spark.Response;
 import spark.Session;
@@ -52,7 +51,7 @@ public class PostsController{
 	public String GetNewPost(Request req, Response resp){
 		Session session = LibraryController.existsSession(req);
         if (null == session) {
-            resp.redirect("/");
+            resp.redirect("/restrictedArea");
         }
         String form = "<form action= \"/posts \" method= \"post\">";
         form+="<center><h1>Crear nueva publicación</h1></center>";
