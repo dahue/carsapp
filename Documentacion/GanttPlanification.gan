@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-06-23" view-index="0" gantt-divider-location="631" resource-divider-location="300" version="2.0" locale="es">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-03-03" view-index="0" gantt-divider-location="631" resource-divider-location="300" version="2.0" locale="es">
     <description/>
-    <view zooming-state="default:0" id="gantt-chart">
+    <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nombre" width="55" order="0"/>
         <field id="tpd4" name="Fecha de inicio" width="18" order="1"/>
         <field id="tpd5" name="Fecha de fin" width="26" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nombre" width="56" order="0"/>
-        <field id="1" name="Función" width="43" order="1"/>
+        <field id="0" name="Nombre" width="52" order="0"/>
+        <field id="1" name="Función" width="47" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -160,7 +160,25 @@
         <task id="214" name="integracion de elasticSearch al proyecto" color="#8cb6ce" meeting="false" start="2014-06-30" duration="10" complete="0" expand="true">
             <depend id="217" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="217" name="confeccion y capacitacion de la presentacion final" color="#8cb6ce" meeting="false" start="2014-07-14" duration="4" complete="0" expand="true"/>
+        <task id="217" name="confeccion y capacitacion de la presentacion final" color="#8cb6ce" meeting="false" start="2014-07-14" duration="4" complete="0" expand="true">
+            <depend id="218" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="218" name="receso" color="#8cb6ce" meeting="false" start="2014-07-18" duration="22" complete="0" expand="true">
+            <depend id="220" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="220" name="planificacion y estimacion" color="#8cb6ce" meeting="false" start="2014-08-19" duration="11" complete="0" expand="true">
+            <depend id="222" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="222" name="implementacion del login" color="#8cb6ce" meeting="false" start="2014-09-03" duration="16" complete="0" expand="true">
+            <depend id="225" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="225" name="Investigacion del patron mvc" color="#8cb6ce" meeting="false" start="2014-09-25" duration="7" complete="0" expand="true">
+            <depend id="226" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="226" name="implementacion de mvc" color="#8cb6ce" meeting="false" start="2014-10-06" duration="16" complete="0" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="229" name="Preparar presentacion de nuevos cambios" color="#8cb6ce" meeting="false" start="2014-10-28" duration="7" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
